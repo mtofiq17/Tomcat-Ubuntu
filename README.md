@@ -27,7 +27,8 @@ sudo chmod -R 757 apache-tomcat-9.0.65
 sudo stopTomcat
 sudo startTomcat
 
-sudo cp target/*.war /opt/apache-tomcat-9.0.65/webapps/
-
 ```
 #### After copying the Artifact in webapps folder we can see the deployed application
+```
+sudo cp target/*.war /opt/apache-tomcat-9.0.65/webapps
+```
