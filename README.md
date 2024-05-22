@@ -20,6 +20,9 @@ sudo ln -s /opt/apache-tomcat-9.0.65/bin/shutdown.sh /usr/bin/stopTomcat
 sudo sed -i 's|<Valve className="org.apache.catalina.valves.RemoteAddrValve"|<!-- <Valve className="org.apache.catalina.valves.RemoteAddrValve"|g' /opt/apache-tomcat-9.0.65/webapps/manager/META-INF/context.xml
 sudo sed -i 's|<Valve className="org.apache.catalina.valves.RemoteAddrValve"|<!-- <Valve className="org.apache.catalina.valves.RemoteAddrValve"|g' /opt/apache-tomcat-9.0.65/webapps/host-manager/META-INF/context.xml
 
+
+sudo chmod -R 757 apache-tomcat-9.0.65
+
 # Stop and start Tomcat
 sudo stopTomcat
 sudo startTomcat
